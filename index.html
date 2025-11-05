@@ -24,7 +24,17 @@
         Receive an intuitive 30-minute reading guided by the Neteru.  
         This sacred exchange takes place within the Temple itself — no external portals.
       </p>
-      <button class="offer-btn">Initiate Exchange</button>
+
+      <!-- Divine Exchange Form -->
+      <form action="https://formspree.io/f/mqagrqrg" method="POST" class="exchange-form">
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="offering">Offering / Intention</label><br>
+        <textarea id="offering" name="offering" rows="3" required></textarea><br>
+
+        <button type="submit" class="offer-btn">Submit Offering</button>
+      </form>
     </section>
   </main>
 
