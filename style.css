@@ -54,7 +54,31 @@ main {
   font-weight: bold;
 }
 
-footer {
-  margin-top: 40px;
-  color: gold;
+.exchange-form {
+  background-color: rgba(255, 215, 0, 0.05);
+  border: 1px solid gold;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.exchange-form input,
+.exchange-form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid gold;
+  background-color: #330066;
+  color: #fff;
+}
+
+.exchange-form button {
+  background-color: gold;
+  color: #330066;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
 }
