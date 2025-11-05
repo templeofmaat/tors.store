@@ -82,3 +82,10 @@ main {
   border-radius: 6px;
   font-weight: bold;
 }
+.domain-status {
+  font-size: 0.9rem;
+  color: gold;
+  text-align: center;
+  margin-top: 5px;
+  opacity: 0.9;
+}
