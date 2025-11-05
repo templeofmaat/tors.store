@@ -101,3 +101,29 @@ main {
 .domain-status strong {
   color: #fff;
 }
+.domain-status {
+  font-size: 0.95rem;
+  color: gold;
+  text-align: center;
+  margin-top: 5px;
+  letter-spacing: 0.5px;
+  opacity: 0.9;
+}
+
+.domain-status strong {
+  color: #fff;
+}
+
+.feather {
+  display: inline-block;
+  margin-left: 6px;
+  animation: float 5s ease-in-out infinite;
+  color: gold;
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+}
+
+@keyframes float {
+  0% { transform: translateY(0); opacity: 1; }
+  50% { transform: translateY(-6px); opacity: 0.9; }
+  100% { transform: translateY(0); opacity: 1; }
+}
