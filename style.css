@@ -137,3 +137,20 @@ main {
   opacity: 0.85;
   filter: brightness(0.85);
 }
+.offer-btn {
+  background-color: gold;
+  color: #330066;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.offer-btn:hover {
+  background-color: #fff;
+  color: gold;
+  box-shadow: 0 0 10px gold;
+  transform: scale(1.05);
+}
