@@ -299,3 +299,17 @@ footer {
   color: rgba(255, 255, 255, 0.7);
   font-style: italic;
 }
+/* Products page (white background only) */
+body.products-page {
+  background-color: #fff;
+  color: #330066;
+}
+
+body.products-page header {
+  background: linear-gradient(180deg, #fff, #f4f4f4);
+}
+
+body.products-page h2,
+body.products-page p {
+  color: #330066;
+}
