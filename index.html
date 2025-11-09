@@ -28,7 +28,7 @@
         This sacred exchange takes place within the Temple itself — no external portals.
       </p>
 
-  <!-- Divine Entry Form -->
+<!-- Divine Entry Form -->
 <form id="divineForm" action="https://formspree.io/f/mqagrqrg" method="POST" class="exchange-form">
   <h3>𓂀 Temple Entry Form 𓂀</h3>
   <p class="form-intro">
@@ -46,12 +46,30 @@
   <textarea id="offering" name="offering" rows="3" placeholder="Share your reason for seeking alignment" required></textarea><br>
 
   <button type="submit" class="offer-btn">Enter the Temple</button>
-
-  <p id="thankYouMessage" style="display:none; margin-top:15px; color:gold;">
-    𓂀 Your entry has been received in the Temple.  
-    Remain open — your divine reading will arrive in divine time. 𓂀
-  </p>
 </form>
+
+<p id="thankYouMessage" style="display:none; color:gold; margin-top:25px; font-size:1.1rem;">
+  𓂀 Thank you — your entry has been received by the Temple. 𓂀
+</p>
+
+<script>
+  const form = document.getElementById("divineForm");
+  const thankYou = document.getElementById("thankYouMessage");
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const data = new FormData(form);
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+    if (response.ok) {
+      form.style.display = "none";
+      thankYou.style.display = "block";
+    }
+  });
+</script>
 
 <script>
   const form = document.getElementById("divineForm");
