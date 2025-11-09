@@ -28,8 +28,8 @@
         This sacred exchange takes place within the Temple itself — no external portals.
       </p>
 
-    <!-- Divine Entry Form -->
-<form action="https://formspree.io/f/mqagrqrg" method="POST" class="exchange-form">
+  <!-- Divine Entry Form -->
+<form id="divineForm" action="https://formspree.io/f/mqagrqrg" method="POST" class="exchange-form">
   <h3>𓂀 Temple Entry Form 𓂀</h3>
   <p class="form-intro">
     To receive your complimentary 15-minute Solar Reading, complete the sacred entry below.  
@@ -46,7 +46,30 @@
   <textarea id="offering" name="offering" rows="3" placeholder="Share your reason for seeking alignment" required></textarea><br>
 
   <button type="submit" class="offer-btn">Enter the Temple</button>
+
+  <p id="thankYouMessage" style="display:none; margin-top:15px; color:gold;">
+    𓂀 Your entry has been received in the Temple.  
+    Remain open — your divine reading will arrive in divine time. 𓂀
+  </p>
 </form>
+
+<script>
+  const form = document.getElementById("divineForm");
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const data = new FormData(form);
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+    if (response.ok) {
+      form.reset();
+      document.getElementById("thankYouMessage").style.display = "block";
+    }
+  });
+</script>
+
 
     </section>
   </main>
