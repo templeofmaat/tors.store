@@ -129,9 +129,11 @@ main {
 }
 .hero-banner {
   width: 100%;
-  max-height: 300px;
+  max-height: 320px;
   object-fit: cover;
   display: block;
   margin: 0 auto;
   border-bottom: 2px solid gold;
+  opacity: 0.85;
+  filter: brightness(0.85);
 }
