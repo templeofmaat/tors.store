@@ -313,3 +313,48 @@ body.products-page h2,
 body.products-page p {
   color: #330066;
 }
+/* ---- Banner: show the whole feather, no crop ---- */
+.hero-banner {
+  width: 100%;
+  max-height: 320px;       /* can raise to 360 if you want taller */
+  height: auto;
+  object-fit: contain;     /* show entire image */
+  object-position: center top; /* bias upward so feather tip shows */
+  display: block;
+  margin: 0 auto;
+  border-bottom: 2px solid gold;
+  background: linear-gradient(180deg, #2a0055, #1a0033); /* blends edges if letterboxed */
+}
+
+/* ---- Make THIS page (store-home) fully purple ---- */
+.store-home {
+  background-color: #1a0033;         /* deep purple page bg */
+  color: #fff;
+}
+
+/* cards on the Solar Reading page */
+.store-home .product {
+  background: rgba(18, 0, 36, 0.6);  /* translucent deep purple */
+  border: 2px solid gold;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.store-home .exchange-form {
+  background: rgba(18, 0, 36, 0.85); /* darker inner panel */
+  border: 1px solid gold;
+  border-radius: 10px;
+}
+
+/* inputs stay readable on dark */
+.store-home .exchange-form input,
+.store-home .exchange-form textarea {
+  background-color: #3b0b75;
+  color: #fff;
+  border: 1px solid gold;
+}
+
+/* optional: lighten headings slightly */
+.store-home h2 {
+  color: #f3e6ff;
+}
