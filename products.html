@@ -1,285 +1,251 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Temple Offerings — Per Hetep en Sḫm</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      background: #fff;
+      margin: 0;
+      font-family: 'Georgia', serif;
+      color: #330066;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      text-align: center;
+      font-weight: 700;
+    }
+
+    /* OFFER CARDS */
+    .offering-card {
+      background: #f3ecff;
+      border: 1px solid #d8c8ff;
+      border-radius: 10px;
+      padding: 25px;
+      margin: 25px auto;
+      max-width: 750px;
+      text-align: center;
+    }
+
+    .offering-btn {
+      background: #f0c000;
+      padding: 8px 18px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    /* PRODUCT GRID */
+    .section-title {
+      font-size: 1.8rem;
+      margin-top: 50px;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+      margin-top: 25px;
+    }
+
+    .product-card {
+      background: #fff;
+      border: 1px solid #e6def9;
+      border-radius: 12px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+      min-height: 420px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: contain;
+      border-radius: 6px;
+      background: #faf7ff;
+    }
+
+    .product-title {
+      font-weight: 700;
+      margin-top: 12px;
+      font-size: 1.1rem;
+    }
+
+    .product-price {
+      font-size: 1rem;
+      font-weight: bold;
+      margin: 5px 0;
+    }
+
+    .product-description {
+      font-size: 0.9rem;
+      margin: 10px 0;
+    }
+
+    .add-to-cart {
+      background: #4d2aa5;
+      color: white;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
 </head>
 
-<body style="background:#ffffff; margin:0; padding:0;">
+
+<body>
 
   <header style="text-align:center;">
-    <img src="products-banner.png"
-         alt="Temple Offerings Banner"
-         class="hero-banner"
-         style="max-height:180px; object-fit:cover;">
-
+    <img src="products-banner.png" class="hero-banner" style="width:100%; max-height:200px; object-fit:cover;">
     <nav style="margin-top:12px;">
       <a href="https://tors.life">Return to Temple</a> |
       <a href="https://tors.store">Offerings</a>
     </nav>
   </header>
 
-  <main style="max-width:900px; margin:40px auto; padding:0 20px;">
 
-    <h1 style="color:#330066; text-align:center; font-size:2rem;">
-      Temple Offerings
-    </h1>
+  <main class="container">
 
-    <p style="text-align:center; color:#330066; max-width:650px; margin:0 auto 40px;">
-      These sacred works flow directly from the House of Ma’at.  
-      Choose the offering aligned with your path.
+    <h1>Temple Offerings</h1>
+    <p style="text-align:center; max-width:650px; margin:0 auto;">
+      These sacred works flow directly from the House of Ma’at. Choose the offering aligned with your path.
     </p>
 
-    <!-- PRODUCT GRID -->
-    <div style="
-      display:grid;
-      grid-template-columns:1fr;
-      gap:25px;
-      max-width:700px;
-      margin:0 auto;
-    ">
 
-      <!-- PRODUCT 1 -->
-      <div style="
-        border:2px solid #330066;
-        padding:20px;
-        border-radius:12px;
-        background:#f7f3ff;
-        box-shadow:0 0 12px rgba(0,0,0,0.07);
-      ">
-        <h2 style="margin-top:0; color:#330066;">Solar Reading — Divine Alignment</h2>
-        <p style="color:#330066;">
-          A complimentary 15-minute alignment reading guided by the Neteru.
-        </p>
-        <a href="index.html"
-           style="
-             display:inline-block;
-             margin-top:10px;
-             padding:10px 18px;
-             background:gold;
-             color:#330066;
-             text-decoration:none;
-             border-radius:6px;
-             font-weight:bold;
-           ">
-          Enter Offering
-        </a>
+    <!-- 🔥 SOLAR READING -->
+    <div class="offering-card">
+      <h2>Solar Reading — Divine Alignment</h2>
+      <p>A complimentary 15-minute alignment reading guided by the Neteru.</p>
+      <button class="offering-btn">Enter Offering</button>
+    </div>
+
+
+    <!-- 🔥 CARDOLOGY READING -->
+    <div class="offering-card">
+      <h2>Cardology Reading — 30 Minutes</h2>
+      <p>$38</p>
+      <p>A 30-minute Cardology reading revealing your birth card, cycles, spiritual destiny patterns, and current timeline.</p>
+      <button class="offering-btn">Book Now — $38</button>
+    </div>
+
+
+    <!-- 🔥 INTUITIVE READING -->
+    <div class="offering-card">
+      <h2>Intuitive Reading — 55 Minutes</h2>
+      <p>$88</p>
+      <p>A deep intuitive session guided by your ancestors and your higher self. Receive clarity, insight, messages, and spiritual alignment.</p>
+      <button class="offering-btn">Book Now — $88</button>
+    </div>
+
+
+    <!-- 🔥 PRODUCTS START -->
+    <h2 class="section-title">Temple Jewelry & Tools</h2>
+
+    <div class="products-grid">
+
+      <!-- EYE OF HERU BRACELET -->
+      <div class="product-card">
+        <img src="eye-of-heru-bracelet.png">
+        <h3 class="product-title">Eye of Heru Bracelet (Gold)</h3>
+        <p class="product-price">$18.44</p>
+        <p class="product-description">Gold stainless steel Eye of Heru bracelet for protection, clarity, and spiritual power.</p>
+        <button class="add-to-cart">Add to Cart</button>
       </div>
-<div class="product-card upgraded-card" style="max-width:700px; margin:30px auto;">
-  <h2 class="product-title">Cardology Reading</h2>
-  <p class="product-price">$38</p>
 
-  <p class="product-description">
-    A 30-minute Cardology reading revealing your birth card, yearly cycles,  
-    personal destiny patterns, and current spiritual timeline.  
-    Gain clarity, alignment, and confirmation of the energies moving through your life.
-  </p>
-
-  <ul style="font-size:0.9rem; text-align:left; margin:0 auto 15px auto; max-width:350px;">
-    <li>Understand your Birth Card & ruling energy</li>
-    <li>Decode your yearly spiritual cycle</li>
-    <li>Identify key challenges & blessings</li>
-    <li>Alignment steps for your next phase</li>
-  </ul>
-
-  <button class="add-to-cart upgraded-btn">Book Now — $38</button>
-</div>
-
-      <div class="product-card upgraded-card" style="max-width:700px; margin:30px auto;">
-  <h2 class="product-title">Intuitive Reading</h2>
-  <p class="product-price">$88</p>
-
-  <p class="product-description">
-    A deep 55-minute intuitive session guided by your ancestors,  
-    your higher self, and your personal energetic field.  
-    Direct messages, clarity, emotional insight, and spiritual alignment.
-  </p>
-
-  <ul style="font-size:0.9rem; text-align:left; margin:0 auto 15px auto; max-width:350px;">
-    <li>Direct intuitive messages for your path</li>
-    <li>Clarity on relationships, purpose, moves, & transitions</li>
-    <li>Energetic alignment guidance</li>
-    <li>Action steps based on your spiritual timeline</li>
-  </ul>
-
-  <button class="add-to-cart upgraded-btn">Book Now — $88</button>
-</div>
-
-           <!-- PRODUCT 2 – Eye of Heru Bracelet -->
-      <div style="
-        border:2px solid #330066;
-        padding:20px;
-        border-radius:12px;
-        background:#f7f3ff;
-        box-shadow:0 0 12px rgba(0,0,0,0.07);
-        text-align:center;
-      ">
-        <img src="eye-of-heru-bracelet.png"
-             alt="Eye of Heru Bracelet"
-             style="width:100%; max-width:280px; border-radius:10px; margin-bottom:15px;">
-
-        <h2 style="margin-top:0; color:#330066;">
-          Eye of Heru Bracelet (Gold)
-        </h2>
-
-        <p style="color:#330066;">
-          Gold stainless steel Eye of Heru bracelet for protection, clarity, and spiritual power.
-        </p>
-
-        <p style="color:#330066; font-weight:bold; font-size:1.1rem;">
-          $18.44
-        </p>
-
-        <a href="eye-of-heru-gold.html"
-           style="
-             display:inline-block;
-             margin-top:10px;
-             padding:10px 18px;
-             background:gold;
-             color:#330066;
-             text-decoration:none;
-             border-radius:6px;
-             font-weight:bold;
-           ">
-          View Details
-        </a>
+      <!-- ANKH RING -->
+      <div class="product-card">
+        <img src="ankh-ring.png">
+        <h3 class="product-title">Ankh + Eye of Heru Ring</h3>
+        <p class="product-price">$33</p>
+        <p class="product-description">Stainless steel ring with the Ankh & Eye of Heru symbols. Sizes 7–13.</p>
+        <button class="add-to-cart">Add to Cart</button>
       </div>
-<div class="products-grid upgraded-grid">
 
- 
-<!-- COLLECTION TITLE -->
-<h2 class="collection-title" style="text-align:center; margin:60px auto 25px; color:#330066; font-size:1.9rem;">
-  Sacred Kemetic Canopic Vessel Collection
-</h2>
+      <!-- ORACLE CARDS -->
+      <div class="product-card">
+        <img src="egyptian-cards.png">
+        <h3 class="product-title">Egyptian Gods Oracle Cards</h3>
+        <p class="product-price">$11.88</p>
+        <p class="product-description">36-card oracle deck with ancient Kemetic imagery for readings & altar work.</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
 
-<div class="products-grid upgraded-grid">
+    </div>
 
-  <!-- HORUS -->
-  <div class="product-card upgraded-card">
-    <img src="horus-urn.png" alt="Horus Canopic Vessel" class="product-img">
-    <h2 class="product-title">Horus Canopic Vessel</h2>
-    <p class="product-price">$65</p>
-    <p class="product-description">
-      Embody the clarity, protection, and royal sight of Heru.  
-      Guards what is sacred to your path—ashes, petitions, amulets, and offerings.
-    </p>
-    <button class="add-to-cart upgraded-btn">Add to Cart</button>
-  </div>
 
-  <!-- ANUBIS -->
-  <div class="product-card upgraded-card">
-    <img src="anubis-urn.png" alt="Anubis Canopic Vessel" class="product-img">
-    <h2 class="product-title">Anubis Canopic Vessel</h2>
-    <p class="product-price">$65</p>
-    <p class="product-description">
-      For protection through transitions and ancestral guidance.  
-      Holds ashes, sacred items, and tools for spiritual alignment.
-    </p>
-    <button class="add-to-cart upgraded-btn">Add to Cart</button>
-  </div>
 
-  <!-- BASTET -->
-  <div class="product-card upgraded-card">
-    <img src="bastet-urn.png" alt="Bastet Canopic Vessel" class="product-img">
-    <h2 class="product-title">Bastet Canopic Vessel</h2>
-    <p class="product-price">$65</p>
-    <p class="product-description">
-      Vessel of joy, harmony, feminine protection, and home blessing.  
-      Perfect for jewelry, womb herbs, charms, and sacred offerings.
-    </p>
-    <button class="add-to-cart upgraded-btn">Add to Cart</button>
-  </div>
+    <!-- 🔥 CANOPIC VESSEL COLLECTION -->
+    <h2 class="section-title">Sacred Kemetic Canopic Vessel Collection</h2>
 
-  <!-- PHARAOH -->
-  <div class="product-card upgraded-card">
-    <img src="pharaoh-urn.png" alt="Pharaoh Canopic Vessel" class="product-img">
-    <h2 class="product-title">Pharaoh Canopic Vessel</h2>
-    <p class="product-price">$65</p>
-    <p class="product-description">
-      Symbol of sovereignty, leadership, and ancestral legacy.  
-      Ideal for lineage items, heirlooms, and royal protection tools.
-    </p>
-    <button class="add-to-cart upgraded-btn">Add to Cart</button>
-  </div>
+    <div class="products-grid">
 
-  <!-- THOTH -->
-  <div class="product-card upgraded-card">
-    <img src="thoth-urn.png" alt="Thoth Canopic Vessel" class="product-img">
-    <h2 class="product-title">Thoth Canopic Vessel</h2>
-    <p class="product-price">$65</p>
-    <p class="product-description">
-      Vessel of divine wisdom, spiritual knowledge, and ancestral memory.  
-      Perfect for petitions, writings, and sacred manifestations.
-    </p>
-    <button class="add-to-cart upgraded-btn">Add to Cart</button>
-  </div>
+      <!-- HORUS -->
+      <div class="product-card">
+        <img src="horus-urn.png">
+        <h3 class="product-title">Horus Canopic Vessel</h3>
+        <p class="product-price">$65</p>
+        <p class="product-description">Symbol of vision, clarity, insight, and higher protection.</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
 
-  <!-- ANKH + EYE OF HERU RING -->
-  <div class="product-card upgraded-card" style="min-height:480px;">
-    <img src="ankh-ring.png" alt="Ankh & Eye of Heru Ring" class="product-img">
-    <h2 class="product-title">Ankh + Eye of Heru Ring</h2>
-    <p class="product-price">$33</p>
+      <!-- ANUBIS -->
+      <div class="product-card">
+        <img src="anubis-urn.png">
+        <h3 class="product-title">Anubis Canopic Vessel</h3>
+        <p class="product-price">$65</p>
+        <p class="product-description">Guardian of transitions, safe passage, and spiritual protection.</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
 
-    <p class="product-description">
-      Stainless steel ring combining the Ankh (eternal life)  
-      and the Eye of Heru (intuition, clarity, protection).  
-      A powerful amulet of alignment and sovereignty.
-    </p>
+      <!-- BASTET -->
+      <div class="product-card">
+        <img src="bastet-urn.png">
+        <h3 class="product-title">Bastet Canopic Vessel</h3>
+        <p class="product-price">$65</p>
+        <p class="product-description">Harmony, joy, grace, and divine feminine energy.</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
 
-   <!-- SIZES -->
-    <label style="font-weight:bold;">Select Size:</label>
-    <select style="
-      width: 100%;
-      padding: 10px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      margin-bottom: 15px;
-      font-size: 1rem;">
-      <option value="7">Size 7</option>
-      <option value="8">Size 8</option>
-      <option value="9">Size 9</option>
-      <option value="10">Size 10</option>
-      <option value="11">Size 11</option>
-      <option value="12">Size 12</option>
-      <option value="13">Size 13</option>
-    </select>
+      <!-- PHARAOH -->
+      <div class="product-card">
+        <img src="pharaoh-urn.png">
+        <h3 class="product-title">Pharaoh Canopic Vessel</h3>
+        <p class="product-price">$65</p>
+        <p class="product-description">Legacy, authority, sovereignty, and royal lineage.</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
 
-    <button class="add-to-cart upgraded-btn">Add to Cart — $33</button>
-  </div>
+      <!-- THOTH -->
+      <div class="product-card">
+        <img src="thoth-urn.png">
+        <h3 class="product-title">Thoth Canopic Vessel</h3>
+        <p class="product-price">$65</p>
+        <p class="product-description">Wisdom, knowledge, divine writing, and spiritual mastery.</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
 
-</div>
-  <!-- EGYPTIAN GODS ORACLE DECK -->
-<div class="product-card upgraded-card" style="min-height:480px;">
-  <img src="egyptian-cards.png" alt="Egyptian Gods Oracle Deck" class="product-img">
-
-  <h2 class="product-title">Egyptian Gods Oracle Deck</h2>
-  <p class="product-price">$11.88</p>
-
-  <p class="product-description">
-    A 36-card oracle deck illustrated with the sacred Neteru of ancient Kemet.  
-    Designed to deliver clear messages, intuitive insight, and spiritual  
-    alignment through ancestral connection.
-  </p>
-
-  <ul style="font-size:0.9rem; text-align:left; margin: 0 auto 15px auto; max-width: 220px;">
-    <li>36 full-color oracle cards</li>
-    <li>Guide booklet included</li>
-    <li>Sacred Neteru imagery</li>
-    <li>Perfect for beginners + advanced readers</li>
-    <li>Ideal for altar work + intuitive sessions</li>
-  </ul>
-
-  <button class="add-to-cart upgraded-btn">Add to Cart — $11.88</button>
-</div>
+    </div>
 
   </main>
-
-  <footer style="text-align:center; margin:50px 0 20px;">
-    <p style="color:#330066;">© 2025 Temple of Royal Sovereignty · All Rights Reserved</p>
-    <p style="color:#330066;">Connected to <strong>tors.store</strong> 𓆄</p>
-  </footer>
 
 </body>
 </html>
