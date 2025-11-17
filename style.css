@@ -600,3 +600,36 @@ body.products-page p {
   background: #5a00cc;
   transform: scale(1.05);
 }
+/* CENTER COLLECTION TITLE */
+.collection-title {
+  text-align: center;
+  width: 100%;
+}
+
+/* FIX GRID & ALIGNMENT */
+.products-grid.upgraded-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+  align-items: stretch;
+}
+
+/* ENSURE ALL CARDS SAME HEIGHT */
+.product-card.upgraded-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* UNIFY CARD STYLE ACROSS PAGE */
+.offering-card,
+.product-card.upgraded-card {
+  border-radius: 14px;
+  border: 1px solid #d7d7d7;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
