@@ -358,3 +358,37 @@ body.products-page p {
 .store-home h2 {
   color: #f3e6ff;
 }
+.product-images img {
+  width: 200px;         /* controls size */
+  height: auto;         /* keeps proportions */
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.product-card {
+  max-width: 900px;     /* keeps card from stretching too wide */
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #dcdcdc;
+}
+
+.product-description {
+  font-size: 1rem;       /* bumps up text size */
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+.product-title {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #330066;
+}
+
+.product-price {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #000;
+  margin-bottom: 20px;
+}
