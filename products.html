@@ -70,4 +70,255 @@
 
         <article class="product-card">
           <img src="eye-of-heru-bracelet.png" alt="Eye of Heru Bracelet (Gold)">
-          <h3 class="product-title">Eye of Heru Bracelet (Gol
+          <h3 class="product-title">Eye of Heru Bracelet (Gold)</h3>
+          <p class="product-price">$18.44</p>
+          <p class="product-description">
+            Gold stainless steel Eye of Heru bracelet for protection, clarity, and spiritual power.
+          </p>
+          <button class="btn-primary">Add to Cart</button>
+        </article>
+
+        <article class="product-card">
+          <img src="ankh-ring.png" alt="Ankh + Eye of Heru Ring">
+          <h3 class="product-title">Ankh + Eye of Heru Ring</h3>
+          <p class="product-price">$33</p>
+          <p class="product-description">
+            Stainless steel ring carrying the Ankh and Eye of Heru.  
+            Available in sizes 7–13 for those walking in sovereignty.
+          </p>
+          <button class="btn-primary">Add to Cart</button>
+        </article>
+
+        <article class="product-card">
+          <img src="egyptian-cards.png" alt="Egyptian Gods Oracle Deck">
+          <h3 class="product-title">Egyptian Gods Oracle Deck</h3>
+          <p class="product-price">$11.88</p>
+          <p class="product-description">
+            36-card oracle deck with Kemetic imagery of the Neteru.  
+            Perfect for daily pulls, altar work, and intuitive readings.
+          </p>
+          <button class="btn-primary">Add to Cart</button>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CANOPIC VESSELS -->
+    <section class="section-block">
+      <h2 class="section-heading">Sacred Kemetic Canopic Vessel Collection</h2>
+
+      <div class="products-grid">
+
+        <article class="product-card">
+          <img src="horus-urn.png" alt="Horus Canopic Vessel">
+          <h3 class="product-title">Horus Canopic Vessel</h3>
+          <p class="product-price">$65</p>
+          <p class="product-description">
+            Guardian of vision, clarity, and spiritual protection.  
+            Ideal for sacred petitions, amulets, or offerings.
+          </p>
+          <button class="btn-primary">Add to Cart</button>
+        </article>
+
+        <article class="product-card">
+          <img src="anubis-urn.png" alt="Anubis Canopic Vessel">
+          <h3 class="product-title">Anubis Canopic Vessel</h3>
+          <p class="product-price">$65</p>
+          <p class="product-description">
+            Aligned with safe passage, transitions, and ancestral guardianship.  
+            Holds ashes, ritual tools, or ancestral items.
+          </p>
+          <button class="btn-primary">Add to Cart</button>
+        </article>
+
+        <article class="product-card">
+          <img src="bastet-urn.png" alt="Bastet Canopic Vessel">
+          <h3 class="product-title">Bastet Canopic Vessel</h3>
+          <p class="product-price">$65</p>
+          <p class="product-description">
+            Carries harmony, joy, and protective feminine power for home and heart.
+          </p>
+          <button class="btn-primary">Add to Cart</button>
+        </article>
+
+        <article class="product-card">
+          <img src="pharaoh-urn.png" alt="Pharaoh Canopic Vessel">
+          <h3 class="product-title">Pharaoh Canopic Vessel</h3>
+          <p class="product-price">$65</p>
+          <p class="product-description">
+            Symbol of sovereignty, legacy, and royal authority across your lineage.
+          </p>
+          <button class="btn-primary">Add to Cart</button>
+        </article>
+
+        <article class="product-card">
+          <img src="thoth-urn.png" alt="Thoth Canopic Vessel">
+          <h3 class="product-title">Thoth Canopic Vessel</h3>
+          <p class="product-price">$65</p>
+          <p class="product-description">
+            Vessel of divine wisdom, writing, and spiritual knowledge; ideal for petitions and written work.
+          </p>
+          <button class="btn-primary">Add to Cart</button>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
+2️⃣ Add / replace this CSS at the bottom of style.css
+Delete or comment out any old rules for
+.offering-card, .products-grid, .product-card, .card, .btn-primary etc.,
+then paste this block at the end.
+
+css
+Copy code
+/* LAYOUT */
+.page-header {
+  text-align: center;
+}
+
+.page-banner {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.top-nav {
+  margin: 12px 0 24px;
+}
+
+.page-wrapper {
+  max-width: 1100px;
+  margin: 0 auto 60px;
+  padding: 0 16px;
+}
+
+.intro-section {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.intro-section p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* SECTIONS */
+.section-block {
+  margin-top: 48px;
+}
+
+.section-heading {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #330066;
+  margin-bottom: 24px;
+}
+
+/* SHARED CARD STYLE */
+.card,
+.product-card {
+  background: #ffffff;
+  border: 1px solid #e0d7f5;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  padding: 20px;
+}
+
+/* READING CARDS (STACKED COLUMN) */
+.card-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card-title {
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.card-price {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* PRODUCTS GRID — 3 ACROSS ON DESKTOP */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .products-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* PRODUCT CARDS */
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 420px;
+}
+
+.product-card img {
+  width: 100%;
+  max-width: 260px;
+  aspect-ratio: 3 / 4;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #f7f2ff;
+  margin-bottom: 12px;
+}
+
+.product-title {
+  font-weight: 700;
+  margin: 4px 0;
+}
+
+.product-price {
+  font-weight: 600;
+  margin: 4px 0 8px;
+}
+
+.product-description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+/* BUTTONS */
+.btn-primary {
+  background: #4d2aa5;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.05);
+}
