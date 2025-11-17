@@ -437,3 +437,85 @@ body.products-page p {
   font-size: 0.95rem;
   line-height: 1.5;
 }
+/* PREMIUM GRID LAYOUT */
+.products-grid.upgraded-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 35px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* PREMIUM PRODUCT CARD */
+.upgraded-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid #d7d7d7;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  cursor: pointer;
+}
+
+/* HOVER EFFECT — GOLD GLOW */
+.upgraded-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.25);
+  border-color: gold;
+}
+
+/* IMAGE STYLE */
+.product-img {
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+/* IMAGE HOVER */
+.upgraded-card:hover .product-img {
+  transform: scale(1.05);
+}
+
+/* TITLES */
+.product-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #330066;
+}
+
+/* PRICE */
+.product-price {
+  font-size: 1.15rem;
+  color: #000;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+/* DESCRIPTION */
+.product-description {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+/* BUTTON */
+.upgraded-btn {
+  background: #330066;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* BUTTON HOVER */
+.upgraded-btn:hover {
+  background: #5a00cc;
+  transform: scale(1.05);
+}
