@@ -312,3 +312,10 @@ body.temple-page .offer-btn:hover {
 .btn-primary:hover {
   filter: brightness(1.1);
 }
+.gold-divider {
+  width: 120px;
+  height: 3px;
+  background-color: gold;
+  margin: 20px auto 40px;
+  border-radius: 3px;
+}
