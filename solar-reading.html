@@ -5,12 +5,138 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Solar Reading — Divine Alignment</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Page override: keep this page deep purple, centered, clean */
+    body {
+      margin: 0;
+      font-family: "Georgia", serif;
+      background-color: #1a0033;
+      color: #f7ecff;
+      text-align: center;
+    }
+
+    header {
+      background: #1a0033;
+      border-bottom: 2px solid gold;
+    }
+
+    .hero-banner {
+      width: 100%;
+      max-height: 260px;
+      object-fit: cover;
+      display: block;
+    }
+
+    nav {
+      padding: 10px 0;
+      background-color: #250049;
+      border-top: 2px solid gold;
+      border-bottom: 2px solid gold;
+    }
+
+    nav a {
+      color: gold;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 10px;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px 40px;
+    }
+
+    h1 {
+      color: #f7ecff;
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      color: gold;
+      margin: 26px 0 12px;
+    }
+
+    p.lead {
+      max-width: 650px;
+      margin: 0 auto 20px;
+      line-height: 1.6;
+    }
+
+    .entry-text {
+      max-width: 650px;
+      margin: 0 auto 24px;
+      line-height: 1.6;
+    }
+
+    .entry-card {
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 24px 20px 28px;
+      border-radius: 14px;
+      border: 1px solid gold;
+      background: rgba(18, 0, 36, 0.9);
+      text-align: left;
+    }
+
+    .entry-card label {
+      display: block;
+      margin-bottom: 6px;
+      color: gold;
+      font-weight: 700;
+    }
+
+    .entry-card input,
+    .entry-card textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 14px;
+      border-radius: 6px;
+      border: 1px solid gold;
+      background-color: #3b0b75;
+      color: #ffffff;
+      font-family: "Georgia", serif;
+    }
+
+    .entry-card input::placeholder,
+    .entry-card textarea::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .btn-primary {
+      display: inline-block;
+      margin-top: 4px;
+      padding: 10px 22px;
+      border-radius: 8px;
+      border: none;
+      background-color: gold;
+      color: #330066;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .btn-primary:hover {
+      filter: brightness(1.05);
+    }
+
+    footer {
+      border-top: 2px solid gold;
+      padding: 16px 10px 20px;
+      font-size: 0.9rem;
+      color: #f7ecff;
+      background-color: #1a0033;
+    }
+  </style>
 </head>
 
-<body class="temple-page">
+<body>
 
 <header>
-  <img src="temple-banner.png" alt="Temple Banner" class="hero-banner">
+  <img src="temple-banner.png" alt="Temple Banner" class="hero-banner" />
 
   <nav>
     <a href="https://tors.life">Return to Temple</a> |
@@ -18,57 +144,49 @@
   </nav>
 </header>
 
-<main style="text-align:center;">
+<main>
 
   <h1>Solar Reading — Divine Alignment</h1>
 
-  <p style="max-width:600px; margin:0 auto 20px;">
-    A complimentary 15-minute alignment reading guided by the Neteru.  
-    This sacred exchange reveals where your light is seated and what path is opening now.
+  <p class="lead">
+    Receive a complimentary 15-minute alignment reading guided by the Neteru.
+    This sacred exchange takes place within the Temple itself — no external portals.
   </p>
 
-  <h2 style="margin-top: 30px;">𓋹 Temple Entry Form 𓋹</h2>
+  <h2>𓋹 Temple Entry Form 𓋹</h2>
 
-  <p style="max-width:600px; margin:0 auto 20px;">
-    Complete the entry form below to open the gate.  
-    Speak truthfully, clearly, and from the heart.
+  <p class="entry-text">
+    Complete the form below to open the gate. Speak truthfully, clearly, and from the heart.
   </p>
 
-  <form action="products.html" method="GET" class="exchange-form"
-  style="
-    max-width: 450px;
-    margin: 30px auto;
-    padding: 25px;
-    border: 1px solid gold;
-    border-radius: 12px;
-    background: rgba(26,0,51,0.85);
-    text-align: left;
-  ">
+  <form action="products.html" method="GET" class="entry-card">
 
-  <label style="color: gold; font-weight: 700;">Name of Initiate</label>
-  <input type="text" name="name" placeholder="Your full name" required
-    style="width: 100%; margin-bottom: 12px; padding: 10px; border: 1px solid gold; border-radius: 6px; background:#3b0b75; color:white;" />
+    <label for="name">Name</label>
+    <input id="name" name="name" type="text" placeholder="Your full name" required />
 
-  <label style="color: gold; font-weight: 700;">Temple Contact</label>
-  <input type="email" name="email" placeholder="Your email address" required
-    style="width: 100%; margin-bottom: 12px; padding: 10px; border: 1px solid gold; border-radius: 6px; background:#3b0b75; color:white;" />
+    <label for="dob">Date of Birth</label>
+    <input id="dob" name="dob" type="text" placeholder="DD / MM / YYYY" required />
 
-  <label style="color: gold; font-weight: 700;">Intention for Alignment</label>
-  <textarea name="intention" placeholder="Share your reason for seeking alignment" rows="4" required
-    style="width: 100%; margin-bottom: 20px; padding: 10px; border: 1px solid gold; border-radius: 6px; background:#3b0b75; color:white;"></textarea>
+    <label for="phone">Phone Number</label>
+    <input id="phone" name="phone" type="tel" placeholder="Best number to reach you" required />
 
-  <div style="text-align:center;">
-    <button type="submit" class="offer-btn"
-      style="background: gold; color:#330066; padding:10px 20px; border-radius:8px; border:none; font-weight:700;">
-      Enter the Temple
-    </button>
-  </div>
+    <label for="email">Email Address</label>
+    <input id="email" name="email" type="email" placeholder="Your email address" required />
 
-</form>
+    <label for="intention">Divine Intentions</label>
+    <textarea id="intention" name="intention" rows="4"
+      placeholder="Share your reason for seeking alignment" required></textarea>
+
+    <div style="text-align:center;">
+      <button type="submit" class="btn-primary">Enter the Temple</button>
+    </div>
+
+  </form>
 
 </main>
+
 <footer>
-  <p>© 2025 Temple of Royal Sovereignty · All Rights Reserved</p>
+  © 2025 Temple of Royal Sovereignty · All Rights Reserved
 </footer>
 
 </body>
