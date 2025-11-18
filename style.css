@@ -57,7 +57,19 @@ main {
   padding: 0 20px;
   text-align: center;
 }
+.subtitle {
+  font-size: 1rem;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
 
+.lead {
+  max-width: 650px;
+  margin: 0 auto 30px;
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
 /********************************************************
    PRODUCT GRID — 3 Across Desktop, 1 Across Mobile
 ********************************************************/
