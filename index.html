@@ -1,164 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Temple Offerings — Per Hetep en Sḫm</title>
-
-  <link rel="stylesheet" href="style.css" />
-
-  <style>
-    body {
-      margin: 0;
-      background: #ffffff;
-      font-family: serif;
-      color: #330066;
-    }
-
-    header {
-      text-align: center;
-      padding-bottom: 10px;
-    }
-
-    .hero-banner {
-      width: 100%;
-      max-height: 200px;
-      object-fit: cover;
-    }
-
-    nav a {
-      color: #330066;
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1rem;
-    }
-
-    h1 {
-      text-align: center;
-      font-size: 2rem;
-      margin-top: 20px;
-      color: #330066;
-    }
-
-    /* Grid Layout */
-    .products-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    /* Product Card */
-    .product-card {
-      border: 2px solid #330066;
-      border-radius: 8px;
-      padding: 12px;
-      text-align: center;
-      background: #fdfdfd;
-    }
-
-    .product-card img {
-      width: 100%;
-      height: 240px;
-      object-fit: cover;
-      border-radius: 6px;
-      margin-bottom: 10px;
-    }
-
-    .product-card h3 {
-      margin: 8px 0;
-      font-size: 1.2rem;
-      color: #330066;
-    }
-
-    .product-card p {
-      font-size: 0.95rem;
-      color: #330066;
-      margin-bottom: 8px;
-    }
-
-    .price {
-      font-size: 1.1rem;
-      font-weight: bold;
-      margin: 10px 0;
-      color: #000;
-    }
-
-    .buy-btn {
-      display: inline-block;
-      background: #330066;
-      color: #fff;
-      padding: 10px 16px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-size: 0.9rem;
-      transition: 0.2s;
-    }
-
-    .buy-btn:hover {
-      opacity: 0.8;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      color: #330066;
-      font-size: 0.9rem;
-      margin-top: 40px;
-      border-top: 1px solid #e5e5e5;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="products-page">
 
+  <!-- HEADER -->
   <header>
     <img src="products-banner.png" alt="Temple Offerings Banner" class="hero-banner">
+
     <nav>
-      <a href="https://tors.life">Return to Temple</a> |
-      <a href="#">Offerings</a>
-    </nav>
+  <a href="https://www.tors.life/">Return to Temple</a> |
+  <a href="https://tors.store/solar-reading.html">Offerings</a>
+</nav>
   </header>
 
-  <h1>Temple Offerings</h1>
+  <main>
 
-  <div class="products-grid">
+    <h1>Per Hetep en Sḫm</h1>
+<p class="subtitle">Per Hetep — House of Divine Peace and Power</p>
+<p class="lead">
+  These sacred works carry divine intention from the Temple of Royal Sovereignty,
+  offered to guide, empower, and align your journey with Ma’at.
+</p>
+<!-- READINGS SECTION -->
+<div class="service-grid">
 
-    <!-- PRODUCT 1 -->
-    <div class="product-card">
-      <img src="egyptian-cards.png" alt="Egyptian Oracle Cards">
-      <h3>Egyptian Gods Oracle Deck</h3>
-      <p>36-card intuitive oracle deck.</p>
-      <div class="price">$11.88</div>
-      <a href="#" class="buy-btn">Purchase</a>
+  <!-- Solar Reading -->
+  <div class="service-card">
+    <div class="service-title">Solar Reading — Divine Alignment</div>
+    <div class="service-price">Complimentary • 15 Minutes</div>
+    <div class="service-description">
+      A brief alignment reading guided by the Neteru to show where your light is sitting now.
     </div>
 
-    <!-- PRODUCT 2 -->
-    <div class="product-card">
-      <img src="eye-of-heru.png" alt="Eye of Heru Bracelet">
-      <h3>Eye of Heru Bracelet</h3>
-      <p>Protective, ancient symbol of seeing.</p>
-      <div class="price">$18.88</div>
-      <a href="#" class="buy-btn">Purchase</a>
+    <div style="margin-top: 15px;">
+      <a class="btn-primary" href="solar-reading.html">Enter Offering</a>
+    </div>
+  </div>
+</div>
+<h2 class="section-heading">𓋹 Sacred Readings</h2>
+<p class="lead">
+  Receive divine guidance aligned with your journey. These readings open your path
+  and bring clarity from the Neteru.
+</p>
+
+<hr style="border: 0; border-top: 2px solid gold; margin: 40px auto; width: 60%;">
+
+  <!-- Cardology Reading -->
+  <div class="service-card">
+    <div class="service-title">Cardology Reading</div>
+    <div class="service-price">$38</div>
+    <div class="service-description">
+      A 30-minute Cardology reading revealing your birth card, yearly cycles, personal patterns, 
+      and current spiritual timeline — bringing clarity and insight to the energies moving through your life.
     </div>
 
-    <!-- PRODUCT 3 -->
-    <div class="product-card">
-      <img src="ankh-necklace.png" alt="Ankh Necklace">
-      <h3>Ankh Necklace</h3>
-      <p>Symbol of eternal life and balance.</p>
-      <div class="price">$22.22</div>
-      <a href="#" class="buy-btn">Purchase</a>
+    <div style="margin-top: 15px;">
+     <a href="https://book.stripe.com/3cI00j4tpfrK3dSbZF77O01" 
+   class="service-button">
+  Book Now — $38
+</a>
     </div>
-
   </div>
 
+  <!-- Intuitive Reading -->
+  <div class="service-card">
+    <div class="service-title">Intuitive Reading</div>
+    <div class="service-price">$88</div>
+    <div class="service-description">
+      A deep 55-minute intuitive session guided by your ancestors and your higher self. 
+      Direct messages, clarity, emotional insight, and spiritual alignment for your current season.
+    </div>
+
+    <div style="margin-top: 15px;">
+      <a href="https://buy.stripe.com/5kQ00je3ZfrK7u86Fl77O02"
+   class="service-button">
+  Book Now — $88
+</a>
+    </div>
+  </div>
+
+
+
+<h2 class="section-heading">𓍯 Memorial & Ancestral Keepsakes</h2>
+
+<p class="lead">
+  These sacred vessels are inspired by the ancient Per Wbn — the House of Purification.
+  Each canopic vessel carries the energy of remembrance, lineage, protection, and ancestral continuity.
+  They serve as sacred holders for petitions, ashes, heirlooms, offerings, or items tied to your family’s legacy.
+</p>
+
+<div class="gold-divider"></div>
+    
+    <!-- PRODUCT GRID -->
+    <div class="products-grid">
+
+      <!-- PRODUCT 1 -->
+<div class="product-card">
+  <img src="pharaoh-urn.png" alt="Pharaoh Canopic Vessel">
+  
+  <div class="product-title">Pharaoh Canopic Vessel</div>
+  <div class="product-price">$65</div>
+  
+  <div class="product-description">
+    Symbol of sovereignty, lineage, and rulership.<br>
+    This vessel holds items tied to your divine authority, family legacy, and personal power.<br>
+    It represents the restoration of your throne and your role as a living ancestor.
+  </div>
+
+  <a href="https://buy.stripe.com/00weVd2lh1AU7u8aVB77O03" 
+     class="add-to-cart">
+     Buy Now
+  </a>
+</div>
+
+      <!-- PRODUCT 2 -->
+<div class="product-card">
+  <img src="thoth-urn.PNG" alt="Djehuty Canopic Vessel">
+  
+  <div class="product-title">Djehuty Canopic Vessel</div>
+  <div class="product-price">$65</div>
+  
+  <div class="product-description">
+    Aligned with Divine Intelligence, Writing, Records, and Sacred Memory.<br>
+    Use for petitions, written prayers, business intentions, ancestral contracts, or spiritual documents.<br>
+    Holds the frequency of order, wisdom, and cosmic law.
+  </div>
+
+  <a href="https://buy.stripe.com/6oU3cv0d96Ve29O4xd77O04"
+     class="add-to-cart">
+    Buy Now
+  </a>
+</div>
+
+      <!-- PRODUCT 3 -->
+<div class="product-card">
+  <img src="horus-urn.png" alt="Ḥeru Canopic Vessel">
+  
+  <div class="product-title">Ḥeru Canopic Vessel</div>
+  <div class="product-price">$65</div>
+  
+  <div class="product-description">
+    Guardian of vision, destiny, clarity, and spiritual perception.<br>
+    This vessel guards your path, protects your home, and strengthens the Eye of Heru within your lineage.<br>
+    Ideal for protective amulets, oils, or sacred items tied to sight and intuition.
+  </div>
+
+  <a href="https://buy.stripe.com/eVqbJ1bVR3J2cOs0gX77O05" 
+     class="add-to-cart">
+    Buy Now
+  </a>
+</div>
+
+      <!-- PRODUCT 4 -->
+<div class="product-card">
+  <img src="anubis-urn.PNG" alt="Anpu Canopic Vessel">
+  
+  <div class="product-title">Anpu Canopic Vessel</div>
+  <div class="product-price">$65</div>
+  
+  <div class="product-description">
+    Guardian of transitions, ancestors, and safe passage.<br>
+    Use for ashes, memorial items, or anything tied to your loved ones who transitioned.<br>
+    Carries the force of protection through portals and spiritual thresholds.
+  </div>
+
+  <a href="https://buy.stripe.com/9B6eVde3Z6Ve29O8Nt77O06" 
+     class="add-to-cart">
+    Buy Now
+  </a>
+</div>
+
+      <!-- PRODUCT 5 -->
+<div class="product-card">
+  <img src="bastet-urn.PNG" alt="Baset Canopic Vessel">
+  
+  <div class="product-title">Baset Canopic Vessel</div>
+  <div class="product-price">$65</div>
+  
+  <div class="product-description">
+    Bringer of harmony, joy, and protective feminine power.<br>
+    Perfect for items tied to love, children, family peace, beauty rituals, or womb healing.<br>
+    Carries a gentle but powerful safeguarding energy into your space.
+  </div>
+
+  <a href="https://buy.stripe.com/14A9AT3pl0wQbKoe7N77O07" 
+     class="add-to-cart">
+    Buy Now
+  </a>
+</div>
+      <!-- PRODUCT 6 -->
+<div class="product-card">
+  <img src="ankh-ring.png" alt="Ankh + Eye of Heru Ring">
+  
+  <div class="product-title">Ankh + Eye of Heru Ring</div>
+  <div class="product-price">$33</div>
+  
+  <div class="product-description">
+    Stainless steel ring featuring the Ankh and Eye of Heru — sizes 7–13.<br>
+    A symbol of eternal life and divine vision, worn as a ring of protection and legacy.
+  </div>
+
+  <a href="https://buy.stripe.com/dRm00jf834N63dS0gX77O08" 
+     class="add-to-cart">
+    Buy Now
+  </a>
+</div>
+
+      <!-- PRODUCT 7 -->
+<div class="product-card">
+  <img src="egyptian-cards.png" alt="Egyptian Gods Oracle Deck">
+  
+  <div class="product-title">Egyptian Gods Oracle Deck</div>
+  <div class="product-price">$11.88</div>
+  
+  <div class="product-description">
+    36-card oracle deck with sacred Kemetic imagery of the Neteru — ideal for altar work, daily pulls, and intuitive readings.
+  </div>
+
+  <a href="https://buy.stripe.com/28E3cve3Za7qbKo6Fl77O09" 
+     class="add-to-cart">
+    Buy Now
+  </a>
+</div>
+      <!-- PRODUCT 8 -->
+<div class="product-card">
+  <img src="eye-of-heru-bracelet.png" alt="Eye of Heru Bracelet (Gold)">
+  
+  <div class="product-title">Eye of Heru Bracelet (Gold)</div>
+  <div class="product-price">$18</div>
+  
+  <div class="product-description">
+    Elegant gold-plated bracelet honoring the Eye of Heru — symbol of protection, clarity, and spiritual vision.
+  </div>
+
+  <a href="https://buy.stripe.com/28EeVd0d993m9CgfbR77O0a" 
+     class="add-to-cart">
+    Buy Now
+  </a>
+</div>
+<!-- Blue 4-in-1 Ceremonial Burner -->
+<div class="product-card">
+  <img src="blue incense holder.png" alt="Blue Divine Waters Burner">
+  
+  <div class="product-title">4-in-1 Ceremonial Burner — Blue Divine Waters</div>
+  <div class="product-price">$10.88</div>
+
+  <div class="product-description">
+    A multi-purpose ceremonial burner crafted for peace, intuition, and clarity.
+    Functions as a candle holder, incense stick burner, cone burner, sage holder, 
+    and Palo Santo holder in one unified piece.
+    <br><br>
+    The blue finish carries the frequency of flow, purity, calm, and spiritual sight —
+    supporting meditation, emotional balance, dream work, and intuitive readings.
+  </div>
+
+  <a href="https://buy.stripe.com/6oUaEX1hda7q01G2p577O0b" 
+     class="add-to-cart">
+     Buy Now
+  </a>
+
+    </div> 
+    <!-- Sand 4-in-1 Ceremonial Burner -->
+<div class="product-card">
+  <img src="sand incense holder.png" alt="Sand Earthstone Burner">
+  
+  <div class="product-title">4-in-1 Ceremonial Burner — Sand Earthstone</div>
+  <div class="product-price">$8.88</div>
+
+  <div class="product-description">
+    A grounding 4-in-1 ceremonial burner designed to hold candles, incense sticks,
+    cones, sage, or Palo Santo.  
+    <br><br>
+    The sand-toned finish carries the frequency of stability, foundation, earth,
+    and ancestral connection — ideal for grounding rituals, protection work,
+    and daily offerings.
+  </div>
+
+  <a href="https://buy.stripe.com/00waEXaRN4N6bKod3J77O0c" 
+     class="add-to-cart">
+     Buy Now
+  </a>
+</div>
+    <!-- Red 4-in-1 Ceremonial Burner -->
+<div class="product-card">
+  <img src="red incenseholder.png" alt="Red Flamestone Burner">
+
+  <div class="product-title">4-in-1 Ceremonial Burner — Red Flamestone</div>
+  <div class="product-price">$10.88</div>
+
+  <div class="product-description">
+    A powerful 4-in-1 ceremonial burner crafted for candles, incense sticks,
+    cones, sage, and Palo Santo.  
+    <br><br>
+    The deep red glaze carries the energy of vitality, passion, life-force,
+    purification, and divine protection — perfect for fiery offerings, intention
+    work, and activating the spiritual heart.
+  </div>
+
+  <a href="https://buy.stripe.com/7sYbJ1bVR1AU4hW9Rx77O0d"
+     class="add-to-cart">
+     Buy Now
+  </a>
+</div>
+    <!-- Black 4-in-1 Ceremonial Burner -->
+<div class="product-card">
+  <img src="black incense holder.png" alt="Black Obsidian Burner">
+
+  <div class="product-title">4-in-1 Ceremonial Burner — Black Obsidian</div>
+  <div class="product-price">$10.88</div>
+
+  <div class="product-description">
+    A grounding 4-in-1 ceremonial burner crafted to hold candles, incense sticks,
+    cones, sage bundles, and Palo Santo.  
+    <br><br>
+    The matte black finish carries the energy of shadow clearing, protection,
+    ancestral guidance, and deep spiritual cleansing — ideal for root work,
+    purification, and powerful energy resets.
+  </div>
+
+  <a href="https://buy.stripe.com/28EeVd0d97ZiaGk8Nt77O0e" 
+     class="add-to-cart">
+     Buy Now
+  </a>
+</div>
+    <!-- END PRODUCT GRID -->
+
+  </main>
+
   <footer>
-    © 2025 Temple of Royal Sovereignty · All Rights Reserved<br>
-    Connected to tors.store 𓆄
+    © Temple of Royal Sovereignty — All Rights Reserved
   </footer>
 
 </body>
