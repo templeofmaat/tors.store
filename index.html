@@ -3,99 +3,163 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Per Hetep en Sekhem — House of Divine Exchange</title>
+  <title>Temple Offerings — Per Hetep en Sḫm</title>
+
   <link rel="stylesheet" href="style.css" />
+
+  <style>
+    body {
+      margin: 0;
+      background: #ffffff;
+      font-family: serif;
+      color: #330066;
+    }
+
+    header {
+      text-align: center;
+      padding-bottom: 10px;
+    }
+
+    .hero-banner {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+    }
+
+    nav a {
+      color: #330066;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-top: 20px;
+      color: #330066;
+    }
+
+    /* Grid Layout */
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    /* Product Card */
+    .product-card {
+      border: 2px solid #330066;
+      border-radius: 8px;
+      padding: 12px;
+      text-align: center;
+      background: #fdfdfd;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .product-card h3 {
+      margin: 8px 0;
+      font-size: 1.2rem;
+      color: #330066;
+    }
+
+    .product-card p {
+      font-size: 0.95rem;
+      color: #330066;
+      margin-bottom: 8px;
+    }
+
+    .price {
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin: 10px 0;
+      color: #000;
+    }
+
+    .buy-btn {
+      display: inline-block;
+      background: #330066;
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: 0.2s;
+    }
+
+    .buy-btn:hover {
+      opacity: 0.8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #330066;
+      font-size: 0.9rem;
+      margin-top: 40px;
+      border-top: 1px solid #e5e5e5;
+    }
+  </style>
 </head>
 
 <body>
- <header style="text-align:center;">
-  <img src="temple-banner.png"
-       alt="Temple of Royal Sovereignty Banner"
-       class="hero-banner">
-<body class="store-home">
 
-  <nav style="margin-top:10px;">
-  <a href="https://tors.life">Return to Temple</a> |
-  <a href="#offerings">Offerings</a>
-</nav>
-</header>
+  <header>
+    <img src="products-banner.png" alt="Temple Offerings Banner" class="hero-banner">
+    <nav>
+      <a href="https://tors.life">Return to Temple</a> |
+      <a href="#">Offerings</a>
+    </nav>
+  </header>
 
+  <h1>Temple Offerings</h1>
 
-  <main>
-    <section id="offerings" class="product">
-      <h2>Solar Reading — Divine Alignment</h2>
-      <p>
-        Receive an intuitive 30-minute reading guided by the Neteru.<br>
-        This sacred exchange takes place within the Temple itself — no external portals.
-      </p>
+  <div class="products-grid">
 
-<!-- Divine Entry Form -->
-<form id="divineForm" action="https://formspree.io/f/mqagrqrg" method="POST" class="exchange-form">
-  <h3>𓂀 Temple Entry Form 𓂀</h3>
-  <p class="form-intro">
-    To receive your complimentary 15-minute Solar Reading, complete the sacred entry below.  
-    Your words open the gate—truthfully, clearly, and from the heart.
-  </p>
+    <!-- PRODUCT 1 -->
+    <div class="product-card">
+      <img src="egyptian-cards.png" alt="Egyptian Oracle Cards">
+      <h3>Egyptian Gods Oracle Deck</h3>
+      <p>36-card intuitive oracle deck.</p>
+      <div class="price">$11.88</div>
+      <a href="#" class="buy-btn">Purchase</a>
+    </div>
 
-  <label for="name">Name of Initiate</label><br>
-  <input type="text" id="name" name="name" placeholder="Your full name" required><br>
+    <!-- PRODUCT 2 -->
+    <div class="product-card">
+      <img src="eye-of-heru.png" alt="Eye of Heru Bracelet">
+      <h3>Eye of Heru Bracelet</h3>
+      <p>Protective, ancient symbol of seeing.</p>
+      <div class="price">$18.88</div>
+      <a href="#" class="buy-btn">Purchase</a>
+    </div>
 
-  <label for="email">Temple Contact</label><br>
-  <input type="email" id="email" name="email" placeholder="Your email address" required><br>
+    <!-- PRODUCT 3 -->
+    <div class="product-card">
+      <img src="ankh-necklace.png" alt="Ankh Necklace">
+      <h3>Ankh Necklace</h3>
+      <p>Symbol of eternal life and balance.</p>
+      <div class="price">$22.22</div>
+      <a href="#" class="buy-btn">Purchase</a>
+    </div>
 
-  <label for="offering">Intention for Entry</label><br>
-  <textarea id="offering" name="offering" rows="3" placeholder="Share your reason for seeking alignment" required></textarea><br>
+  </div>
 
-  <button type="submit" class="offer-btn">Enter the Temple</button>
-</form>
-
-<p id="thankYouMessage" style="display:none; color:gold; margin-top:25px; font-size:1.1rem;">
-  𓂀 Thank you — your entry has been received by the Temple. 𓂀
-</p>
-
-<script>
-  const form = document.getElementById("divineForm");
-  const thankYou = document.getElementById("thankYouMessage");
-
-  form.addEventListener("submit", async (event) => {
-    event.preventDefault();
-    const data = new FormData(form);
-    const response = await fetch(form.action, {
-      method: form.method,
-      body: data,
-      headers: { 'Accept': 'application/json' }
-    });
-    if (response.ok) {
-      form.style.display = "none";
-      thankYou.style.display = "block";
-    }
-  });
-</script>
-
-<script>
-  const form = document.getElementById("divineForm");
-  form.addEventListener("submit", async (event) => {
-    event.preventDefault();
-    const data = new FormData(form);
-    const response = await fetch(form.action, {
-      method: form.method,
-      body: data,
-      headers: { 'Accept': 'application/json' }
-    });
-    if (response.ok) {
-      form.reset();
-      document.getElementById("thankYouMessage").style.display = "block";
-    }
-  });
-</script>
-
-
-    </section>
-  </main>
-
-  <footer style="text-align:center; margin-top:40px;">
-    <p>© 2025 Temple of Royal Sovereignty · All Rights Reserved</p>
-    <p>Connected to <strong>tors.store</strong> <span class="feather">𓆄</span></p>
+  <footer>
+    © 2025 Temple of Royal Sovereignty · All Rights Reserved<br>
+    Connected to tors.store 𓆄
   </footer>
+
 </body>
 </html>
